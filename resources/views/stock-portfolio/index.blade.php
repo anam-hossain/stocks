@@ -23,7 +23,7 @@
 					<th>Net assets</th>
 				</tr>
 
-				@foreach(session('stocks') as $ticket => $stock)
+				@foreach($stocks as $ticket => $stock)
 					<tr>
 						<td>{{ $ticket }}</td>
 						<td>{{ $stock['price'] }}</td>

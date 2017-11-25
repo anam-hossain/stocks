@@ -17,7 +17,9 @@ class StockPortfolioController extends Controller
             return redirect()->to('/users/create');
         }
 
-        return view('stock-portfolio.index');
+        $stocks = session('stocks', []);
+
+        return view('stock-portfolio.index', compact('stocks'));
     }
 
     /**
