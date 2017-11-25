@@ -24,7 +24,7 @@ class AmountsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request)
-    {   dd($request->all());
+    {   
         $amount = session('amount', 0);
 
         if ($request->option == 'add') {
