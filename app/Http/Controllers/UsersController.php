@@ -24,6 +24,8 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
+        session()->flush();
+        
         session(['username' => $request->username]);
         session(['amount' => $request->amount]);
 

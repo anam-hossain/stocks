@@ -7,6 +7,7 @@
     	<div class="col-sm-12">
     		<h2>Stock portfolio</h2>
     		<p><a href="/stocks-portfolio/amounts/edit">Add/Remove cash amount</a></p>
+    		<p><a href="/users/create">Create new user</a></p>
 		</div>
 
 		<div class="col-sm-8 well">
