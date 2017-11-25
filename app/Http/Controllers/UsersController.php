@@ -13,8 +13,10 @@ class UsersController extends Controller
      */
     public function create()
     {
-        session()->flush();
-        
+        session()->forget('stocks');
+        session()->forget('username');
+        session()->forget('amount');
+
         return view('users.create');
     }
 
@@ -26,8 +28,6 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        session()->flush();
-
         session(['username' => $request->username]);
         session(['amount' => $request->amount]);
 
